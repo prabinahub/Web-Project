@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=600');
+        }
+        .menu-item {
+            margin-bottom: 10px;
+        }
+        .order-section {
+            background: rgba(61, 39, 39, 0.7);
+            padding: 20px;
+            margin: 30px auto;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(255, 215, 0, 0.5);
+        }
+        .order-section h2 {
+            color: rgb(226, 207, 97);
+        }
+        .order-section input, .order-section select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .order-btn {
+            padding: 10px 15px;
+            background: #e2d279;
+            color: black;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+        .order-btn:hover {
+            background: rgb(175, 180, 148);
+        }
+    </style
+    </style>
+</head>
+<body>
+    <div class="order-section">
+        <h2>Place Your Order</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Your Contact" required>
+            <input type="text" placeholder="Your Address" required>
+            <select required>
+                <option value="">Select Item</option>
+                <option value="Truffle Butter Burger">Truffle Butter Burger - $12</option>
+                <option value="Grilled Steak with Roasted Potatoes">Grilled Steak with Roasted Potatoes - $19.99</option>
+                <option value="Japanese A5 Wagyu Sukiyaki">Japanese A5 Wagyu Sukiyaki - $22.49</option>
+                <option value="Grilled Mediterranean Branzino">Grilled Mediterranean Branzino - $16.99</option>
+                <option value="Chocolate Lava Cake">Chocolate Lava Cake - $7.99</option>
+                <option value="Rose & Pistachio French Macarons">Rose & Pistachio French Macarons - $8.99</option>
+                <option value="Vanilla Bean Crème Brûlée">Vanilla Bean Crème Brûlée - $9.49</option>
+                <option value="Raspberry & White Chocolate Mousse Tower">Raspberry & White Chocolate Mousse Tower - $7.99</option>
+                <option value="Lavender & Honey Gin Sour">Lavender & Honey Gin Sour - $5.99</option>
+                <option value="Caramelized Hazelnut Affogato">Caramelized Hazelnut Affogato - $4.29</option>
+                <option value="Aurora Borealis Fizz">Aurora Borealis Fizz - $3.46</option>
+                <option value="Crimson Velvet Elixir">Crimson Velvet Elixir - $2.89</option>
+            </select>
+            <input type="number" placeholder="Quantity" min="1" required>
+            <button class="order-btn" type="submit">Order Now</button>
+        </form>
+    </div>
+</body>
+</html>
