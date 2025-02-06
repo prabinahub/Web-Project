@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Golden Fable</title>-
+    <style>
+        /* General Styling */
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size:contain;
+            background-position: center;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        /* Header Styling */
+        header {
+            background: rgba(15, 7, 7, 0.8);
+            padding: 20px;
+            margin-top: -15px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family:'Times New Roman', Times, serif;
+            letter-spacing: 2px;
+            color: rgb(192, 179, 106);
+            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
+        }
+        .quote {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+           margin-top: -30px;
+            font-size: 20px;
+            color: #c09d13;
+        }
+        /* Menu Layout */
+        .menu {
+            display: flex;
+            justify-content: center;
+           /* flex-wrap: wrap; */
+            margin: 1px;
+        }
+        .menu-section {
+            width: 30%;
+            margin: 3px;
+            padding: 5px;
+            border-radius: 10px;
+            background: rgba(19, 6, 6, 0.7);
+            box-shadow: 5px 5px 15px rgba(23, 27, 8, 0.3);
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+        }
+        .menu-section:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 5px 20px rgba(153, 135, 32, 0.7);
+        }
+        .menu-section h2 {
+            border-bottom: 2px solid rgb(136, 124, 44);
+            padding-bottom: 5px;
+            padding-top: 1px;
+            font-size: 26px;
+        }
+        .menu-section img {
+            width: 95%;
+            border-radius: 20px;
+            margin-bottom: 25px;
+        }
+        .menu-section ul {
+            list-style:none;
+            padding: 0;
+        }
+        .menu-section li {
+            padding: 8px;
+            font-size: 20px;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            transition: color 0.3s ease-in-out;
+        }
+        .menu-section li:hover {
+            color: rgb(237, 255, 75);
+        }
+        .price {
+            background: rgb(187, 177, 120);
+            color: black;
+            padding: 2px 9px;
+            border-radius: 5px;
+            font-weight:lighter;
+        }
+        /* Button Styling */
+        .order-btn {
+            margin-top: 10px;
+            margin-bottom: -100px;
+            padding: 10px 15px;
+            background: rgb(238, 215, 84);
+            color: black;
+            font-weight:bold;
+            font-size: larger;
+            border:5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .order-btn:hover {
+            background: rgb(175, 180, 148);
+            color: rgb(0, 0, 0);
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .menu-section {
+                width: 80%;
+            }
+        footer {
+                color:black;
+                font-weight: bold;
+                text-align: center;
+                padding: 40px 20px;
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    Golden Fable
+    <br>
+    <br><div class="quote">"A taste of luxury on every plate!"</div>
+</header>
+<div class="menu">
+    <div class="menu-section">
+        <h2>Appetizers</h2>
+        <ul>
+            <li>Truffle-Infused Burrata <span class="price">$6.99</span></li>
+            <img src="https://images.pexels.com/photos/19808760/pexels-photo-19808760/free-photo-of-pizza-with-egg-benedict-and-arugula.jpeg?auto=compress&cs=tinysrgb&w=600" >
+            <li>Caviar & Blini Bites <span class="price">$8.49</span></li>
+            <img src="https://images.pexels.com/photos/11269562/pexels-photo-11269562.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Lobster Bisque Shooter <span class="price">$10.99</span></li>
+            <img src="https://images.pexels.com/photos/18284818/pexels-photo-18284818/free-photo-of-open-lobster-in-stew.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Smoked Salmon Rosettes <span class="price">$12<span></li>
+            <img src="https://images.pexels.com/photos/12986399/pexels-photo-12986399.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Foie Gras Toast Points <span class="price">$13.79</span></li>
+            <img src="https://images.pexels.com/photos/30519773/pexels-photo-30519773/free-photo-of-healthy-avocado-toast-meal-with-salad.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </ul>
+    </div>
+    <div class="menu-section">
+        <h2>Main Courses</h2>
+        <ul>
+            <li>Truffle Butter Burger <span class="price">$12</span></li>
+            <img src="https://images.pexels.com/photos/3738730/pexels-photo-3738730.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Grilled Steak with Roasted Potatoes <span class="price">$19.99</span></li>
+            <img src="https://images.pexels.com/photos/7491904/pexels-photo-7491904.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Japanese A5 Wagyu Sukiyaki <span class="price">$22.49</span></li>
+            <img src="https://images.pexels.com/photos/16068590/pexels-photo-16068590/free-photo-of-a-bowl-of-ramen-with-meat-and-eggs.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Grilled Mediterranean Branzino <span class="price">$16.99</span></li>
+            <img src="https://images.pexels.com/photos/6089834/pexels-photo-6089834.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </ul>
+    </div>
+    <div class="menu-section">
+        <h2>Desserts</h2>
+        <ul>
+            <li>Chocolate Lava Cake <span class="price">$7.99</span></li>
+            <img src="https://images.pexels.com/photos/5163948/pexels-photo-5163948.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Rose & Pistachio French Macarons <span class="price">$8.99</span></li>
+            <img src="https://images.pexels.com/photos/11982459/pexels-photo-11982459.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Vanilla Bean Crème Brûlée<span class="price">$9.49</span></li>
+            <img src="https://images.pexels.com/photos/5638511/pexels-photo-5638511.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Raspberry & White Chocolate Mousse Tower <span class="price">$7.99</span></li>
+            <img src="https://images.pexels.com/photos/6261275/pexels-photo-6261275.jpeg?auto=compress&cs=tinysrgb&w=600">
+            
+        </ul>
+    </div>
+    <div class="menu-section">
+        <h2>Drinks</h2>
+        <ul>
+            <li>Lavender & Honey Gin Sour <span class="price">$5.99</span></li>
+            <img src="https://images.pexels.com/photos/15023088/pexels-photo-15023088/free-photo-of-preparing-a-dessert-in-a-glass.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Caramelized Hazelnut Affogato <span class="price">$4.29</span></li>
+            <img src="https://images.pexels.com/photos/11185643/pexels-photo-11185643.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Aurora Borealis Fizz<span class="price">$3.46</span></li>
+            <img src="https://images.pexels.com/photos/5947012/pexels-photo-5947012.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <li>Crimson Velvet Elixir<span class="price">$2.89</span></li>
+            <img src="https://images.pexels.com/photos/9544262/pexels-photo-9544262.jpeg?auto=compress&cs=tinysrgb&w=600">
+            
+        </ul>
+    </div>
+</div>
+<button class="order-btn">Order Now</button>
+    <footer>
+        <div class="footer-container">
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <span>📍 06-Hattiban, lalitpur</span>
+                <span>📞 +977 9823486926</span>
+                <p>✉️ goldenfable@gmail.com</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Golden Fable. All rights reserved.</p>
+    </footer>
+</body>
+</html>
